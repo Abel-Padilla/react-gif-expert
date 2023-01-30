@@ -5,7 +5,7 @@ import { AddCategory, GifGrid } from './components'
 
 export const GifExpertApp = () => {
     const MySwal = withReactContent(Swal);
-    const [categories, setCategories] = useState(['One Punch']);
+    const [categories, setCategories] = useState([]);
     const onAddCategory = (newCategory) => {
         //console.log(newCategory)
         if (categories.includes(newCategory)) {
