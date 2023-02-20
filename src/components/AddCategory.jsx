@@ -3,7 +3,7 @@ import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
 export const AddCategory = ({ onNewCategory }) => {
- 
+
     const MySwal = withReactContent(Swal)
 
     const [inputValue, setInputValue] = useState('');
@@ -27,7 +27,7 @@ export const AddCategory = ({ onNewCategory }) => {
 
 
     return (
-        <form onSubmit={(event) => onSubmit(event)}>
+        <form onSubmit={(event) => onSubmit(event)} aria-label="form">
             <input
                 type="text"
                 placeholder='Buscar gifs'
