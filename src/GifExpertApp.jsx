@@ -23,7 +23,7 @@ export const GifExpertApp = () => {
             <h1>Gif Expert App</h1>
             <AddCategory
                 currentCategories={categories}
-                onNewCategory={event => onAddCategory(event)}
+                onNewCategory={(event) => {return onAddCategory(event)}}
             />
             {categories.map(category => <GifGrid key={category} categoryName={category} />)}
         </>

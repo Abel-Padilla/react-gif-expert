@@ -3,14 +3,11 @@ import { GifExpertApp } from '../src/GifExpertApp';
 
 
 describe('Pruebas en <GifExpertApp />', () => {
-
     test('should ', () => {
-        
-        render( <GifExpertApp /> );
+
+        render(<GifExpertApp />);
         screen.debug();
 
 
     });
-
-
 });
